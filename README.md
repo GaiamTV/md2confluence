@@ -29,6 +29,7 @@ It's mandatory. It looks like:
   "user": "my-user (Optional)",
   "pass": "my-password (Optional)",
   "prefix": "This document is automatically generated. Please don't edit it directly!",
+  "notify": true (Optional),
   "pages": [
     {
       "pageid": "37748761",
@@ -48,6 +49,7 @@ It's mandatory. It looks like:
 | user | your confluence username. If you don't set any it will be prompt it |
 | pass | your confluence password. If you don't set any it will be prompt it |
 | prefix | OPTIONAL - a general information that is included at the top of the confluence page |
+| notify | OPTIONAL - 'Notify watchers' on updates (defaults to true) |
 | pages | a list of objects with the pages do you want to update |
 
 Each page object can define the following key value pairs.

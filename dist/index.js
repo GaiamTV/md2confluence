@@ -61,6 +61,9 @@ if (!config.pass) {
     message: 'Your Confluence password:'
   });
 }
+if (!config.notify) {
+  config.notify = true;
+}
 
 inquirer.prompt(prompts).then(function (_answers) {
   var answers = _answers;
@@ -158,6 +161,7 @@ inquirer.prompt(prompts).then(function (_answers) {
             }
           };
           currentPage.version.number = parseInt(currentPage.version.number, 10) + 1;
+          currentPage.version.minorEdit = config.notify;
 
           return rp({
             method: 'PUT',
