@@ -10,7 +10,7 @@ You can safely install it as a global package:
 ```bash
 npm install -g md2confluence
 ```
-This will allow you to use the command ```md2confluence``` anywhere.
+This will allow you to use the command `md2confluence` anywhere.
 
 But, it's intended to development environments and I recommend to install it as dev dependency:
 
@@ -61,6 +61,10 @@ Each page object can define the following key value pairs.
 | pageid | the page ID of the confluence page to update ([How to get Confluence page ID](https://confluence.atlassian.com/confkb/how-to-get-confluence-page-id-648380445.html)) |
 | mdfile | The path to the file in Markdown format with the content to update the page. It's relative to the dir where you run the command. |
 | title | the page title, if skipped the already defined page title will be kept.
+
+### Set up Confluence API Token
+
+In the following steps, "password" referes to an [API token set in the web UI](https://confluence.atlassian.com/cloud/api-tokens-938839638.html).
 
 ### Use Environmental Variables to store username and password
 
