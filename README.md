@@ -4,19 +4,21 @@ Update confluence pages from your markdown files (like a README.md)
 ## tl;dr
 Install this module, create a confluence page for each file you would like to update, and create a `.md2confluence-rc` file that has a `pages` entry for each file/page. Add an entry to `scripts` in `package.json` and call as needed.
 
-## How to use it
-
-### Install the package
-
 **Note** For now, directly edit `package.json` to add this fork/branch as a dev dependency:
 
-```
+```javascript
+{
   "devDependencies": {
     ...
     "md2confluence": "GaiamTV/md2confluence#notify",
     ...
   }
+}
 ```
+
+## How to use it
+
+### Install the package
 
 You can safely install it as a global package:
 
