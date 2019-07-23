@@ -8,6 +8,16 @@ Install this module, create a confluence page for each file you would like to up
 
 ### Install the package
 
+**Note** For now, directly edit `package.json` to add this fork/branch as a dev dependency:
+
+```
+  "devDependencies": {
+    ...
+    "md2confluence": "GaiamTV/md2confluence#notify",
+    ...
+  }
+```
+
 You can safely install it as a global package:
 
 ```bash
